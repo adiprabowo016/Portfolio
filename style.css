@@ -33,10 +33,16 @@ section::before {
 
 .home h1 {
     font-size: 72px;
+    width: 100%;
 }
 
 .home h3 {
     font-size: 48px;
+    width: 100%;
+}
+
+.home img {
+    width: 100%;
 }
 
 .home .arrow img {
@@ -49,6 +55,7 @@ section::before {
 
 .about::before {
     content: 'About';
+   width: 100%;
 }
 
 .about-exp-item {
@@ -66,6 +73,7 @@ section::before {
 
 .work::before {
     content: 'Work';
+    
 }
 
 .work-img{
@@ -105,6 +113,7 @@ section::before {
 
 #work-1:hover::after {
     content: 'Software QA';
+    width: 100%;
 }
 
 #work-2 {
@@ -113,6 +122,7 @@ section::before {
 
 #work-2:hover::after {
     content: '3D Modeling';
+    width: 100%;
 }
 
 #work-3 {
@@ -121,6 +131,7 @@ section::before {
 
 #work-3:hover::after {
     content: 'Web Design';
+    width: 100%;
 }
 
 .contact {
@@ -129,6 +140,7 @@ section::before {
 
 .contact::before {
     content:'Contact';
+    width: 100%;
 }
 
 .contact-form {
@@ -138,6 +150,20 @@ section::before {
 .form-label {
     font-weight: 700;
 }
+
+@media only screen and (max-width: 768px) {
+    .home img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    section::before {
+        left: -2px;
+        font-size: 64px;
+    }
+}
+
 @keyframes upDown {
     0% {
         transform: translateY(0);
